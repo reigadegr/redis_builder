@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install gcc-multilib llvm clang make cmake
-      - name: Build
+      - name: Build_Android
         run: |
           export ANDROID_NDK_HOME=$(realpath ~/ndk_temp)
           export ANDROID_NDK_ROOT=$ANDROID_NDK_HOME
